@@ -407,6 +407,10 @@ li i {
   align-items: center;
   overflow: hidden;
   transition: 0.5s;
+
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
 .card-container .card .box:hover {
