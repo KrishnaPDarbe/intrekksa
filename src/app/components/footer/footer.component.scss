@@ -20,24 +20,38 @@ a{
 }
 }
 
+h2{
+  font-size: 1rem;
+}
 span,h2{
   color: #FFFFFF;
 }
 
 .social-handles{
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   ul{
     display: flex;
     padding: 1rem 0;
   }
   li{
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    a{
+      font-size: 0.75rem;
+    }
   }
+}
+
+pre{
+  color:#FFFFFF;
+  font-size: 0.75rem;
 }
 
 .legal-handles{
   padding-top: 1rem;
   border-top: 2px solid gray;
+  nav{
+    padding-right: 10rem;
+  }
   ul{
     display: flex;
     padding: 1rem 0;
@@ -59,11 +73,13 @@ span,h2{
   }
   .first-row{
     display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr);
+    grid-template-columns: 2fr 1fr 2fr;
     padding: 1em 0 1em 10rem;
     .social-handles,.location-handle{
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
     }
   }
   .legal-handles{
@@ -72,6 +88,15 @@ span,h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .social-handles{
+    ul{
+      padding: 0;
+    }
+    li{
+      margin-right: 0.5rem;
+    }
   }
 
 }
