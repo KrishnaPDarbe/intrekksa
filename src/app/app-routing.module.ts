@@ -10,6 +10,10 @@ const routes: Routes = [
     component:HomePageComponent
   },
   {
+    path:'intrekksa',
+    component:HomePageComponent
+  },
+  {
     path: 'travelAgency',
     component: TravelAgencyComponent,
   },
