@@ -14,6 +14,10 @@ const routes: Routes = [
     component:HomePageComponent
   },
   {
+    path:'intrekksa/travelAgency',
+    component:HomePageComponent
+  },
+  {
     path: 'travelAgency',
     component: TravelAgencyComponent,
   },
