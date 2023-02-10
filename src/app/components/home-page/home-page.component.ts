@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BnNgIdleService } from 'bn-ng-idle';
 
 @Component({
   selector: 'intrekksarl-home-page',
@@ -7,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  userisIdle:boolean=false
+  constructor(private bnIdle: BnNgIdleService) {
+    this.bnIdle.startWatching(300).subscribe((res) => {
+      if(res) {
+          this.userisIdle= true
+      }
+    })
+   }
 
   ngOnInit(): void {
   }
 
-  test(){
-    alert('hello')
+  closePopup(){
+    this.userisIdle= false
   }
 }

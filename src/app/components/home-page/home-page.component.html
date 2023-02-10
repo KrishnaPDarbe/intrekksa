@@ -1,7 +1,7 @@
 <interkk-header></interkk-header>
 <section class="content">
   <h2>
-    <Pre>Interkk Sarl</Pre> InTrekk is a limited liability company that offers a wide range of innovative services to
+    <Pre>Interkk Sarl</Pre> is a limited liability company that offers a wide range of innovative services to
     help organizations and individuals stay connected, manage their finances, travel, and make better data-driven
     decisions. Our services include INTREKK Innovative Mobility Data Service, international airtime top-up services,
     travel agency, and data science consulting, and artificial intelligence services.
@@ -11,12 +11,13 @@
 
 <section class="accouncement">
   <div>
-    this is a accouncement section
+   SAVE THE DATE: The Energy Intelligence Forum Returns to London,
+   <Pre>October 17-19,2023</Pre>
   </div>
-  <a href="">click here</a>
+  <!-- <a href="">click here</a> -->
 
 </section>
-
+<interkk-idle-popup (popupClosed)="closePopup()" *ngIf="userisIdle"></interkk-idle-popup>
 <section>
 
   <div class="card-container">
@@ -36,7 +37,7 @@
           <img src="../../../assets/images/datascience.jpg" alt="">
           <h3>TRAVEL AGENCY</h3>
           <p>InTrekk's travel agency offers comprehensive travel services, including air travel, hotel bookings, and car rental services</p>
-          <a routerLink="/travelAgency">Read More</a>
+          <a target="_blank" routerLink="/travelAgency">Read More</a>
         </div>
       </div>
     </div>
@@ -46,7 +47,7 @@
 
           <h3>DATA SCIENCE CONSULTING</h3>
           <p>InTrekk's data science consulting services are designed to help organizations make the most of their data</p>
-          <a routerLink="/dataScience">Read More</a>
+          <a target="_blank" routerLink="/dataScience">Read More</a>
         </div>
       </div>
     </div>
@@ -85,8 +86,6 @@
 </section>
 
 <interkk-footer></interkk-footer>
-<div class="whatsapp-handle">
-  <a target="_blank" href="https://api.whatsapp.com/send?phone=919742310358">
-    <i class="fa fa-whatsapp fa-3x"></i>
-  </a>
-</div>
+
+
+

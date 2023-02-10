@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup {
+  background-image: url(../../../assets/images/popup.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 75%;
+  object-fit: cover;
+  margin: 70px auto;
+  padding: 20px;
+  // background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: #ffffff;
+}
+
+.popup span {
+  margin-top: 0;
+  font-size: 2rem;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  margin-top: 2rem;
+  overflow: auto;
+  font-size: 1.5rem;
+}
+
+.intrekk-button {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  background: #4861fc;
+  color: #ffffff;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+    height: 60%;
+  }
+}

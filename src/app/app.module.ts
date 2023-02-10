@@ -12,6 +12,8 @@ import { ArtificialIntelligenceComponent } from './components/artificial-intelli
 import { TopUpComponent } from './components/top-up/top-up.component';
 import { MobilityServiceComponent } from './components/mobility-service/mobility-service.component';
 import { CashCollectionComponent } from './components/cash-collection/cash-collection.component';
+import { BnNgIdleService } from 'bn-ng-idle';
+import { IdlePopupComponent } from './components/idle-popup/idle-popup.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,14 @@ import { CashCollectionComponent } from './components/cash-collection/cash-colle
     ArtificialIntelligenceComponent,
     TopUpComponent,
     MobilityServiceComponent,
-    CashCollectionComponent
+    CashCollectionComponent,
+    IdlePopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BnNgIdleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
