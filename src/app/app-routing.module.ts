@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path:'intrekksa/travelAgency',
-    component:HomePageComponent
+    component:TravelAgencyComponent
   },
   {
     path: 'travelAgency',
