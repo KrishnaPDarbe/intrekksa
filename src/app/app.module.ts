@@ -14,6 +14,8 @@ import { MobilityServiceComponent } from './components/mobility-service/mobility
 import { CashCollectionComponent } from './components/cash-collection/cash-collection.component';
 import { BnNgIdleService } from 'bn-ng-idle';
 import { IdlePopupComponent } from './components/idle-popup/idle-popup.component';
+import { TypingAnimationModule } from 'angular-typing-animation';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { IdlePopupComponent } from './components/idle-popup/idle-popup.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    TypingAnimationModule
   ],
   providers: [BnNgIdleService],
   bootstrap: [AppComponent]

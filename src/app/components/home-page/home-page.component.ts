@@ -6,7 +6,7 @@ import { BnNgIdleService } from 'bn-ng-idle';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent  {
 
   userisIdle:boolean=false
   constructor(private bnIdle: BnNgIdleService) {
@@ -17,8 +17,6 @@ export class HomePageComponent implements OnInit {
     })
    }
 
-  ngOnInit(): void {
-  }
 
   closePopup(){
     this.userisIdle= false
