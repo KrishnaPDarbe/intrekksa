@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobility-service.component.scss']
 })
 export class MobilityServiceComponent implements OnInit {
+  start: boolean = false
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit () {
+    setInterval(()=>this.start=!this.start,1500)
   }
 
 }

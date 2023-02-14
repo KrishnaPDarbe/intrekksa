@@ -4,6 +4,7 @@ import { ArtificialIntelligenceComponent } from './components/artificial-intelli
 import { CashCollectionComponent } from './components/cash-collection/cash-collection.component';
 import { DataScienceComponent } from './components/data-science/data-science.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { MobilityServiceComponent } from './components/mobility-service/mobility-service.component';
 import { TopUpComponent } from './components/top-up/top-up.component';
 import { TravelAgencyComponent } from './components/travel-agency/travel-agency.component';
 
@@ -31,6 +32,14 @@ const routes: Routes = [
   {
     path: 'artificialIntelligence',
     component: ArtificialIntelligenceComponent,
+  },
+  {
+    path: 'intrekksa/mobilityService',
+    component: MobilityServiceComponent,
+  },
+  {
+    path: 'mobilityService',
+    component: MobilityServiceComponent,
   },
   {
     path: 'intrekksa/cashCollection',
