@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CashCollectionComponent implements OnInit {
 
-  constructor() { }
+  start: boolean = false
 
-  ngOnInit(): void {
+  ngOnInit () {
+    setInterval(()=>this.start=!this.start,1500)
   }
 
 }

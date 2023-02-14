@@ -1,0 +1,131 @@
+.cash_collection {
+  display: grid;
+  place-items: center;
+  h1 {
+    font-size: 3rem;
+    font-family: system-ui;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.cash_collection h2 {
+  padding: 1em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  font-family: poppins-bold !important;
+  pre {
+    font-size: 3rem;
+    display: inline;
+    color: #ffffff;
+  }
+}
+
+video {
+  width: 100%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -100;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+.core_service--section {
+  padding: 2rem;
+}
+
+.serivce {
+  margin-bottom: 1.5rem;
+  img {
+    width: 7em;
+    height: 5em;
+  }
+}
+
+h3 {
+  margin-bottom: 1.25rem;
+}
+.banner-image {
+  width: 17rem;
+}
+
+.benefits{
+  padding: 1.25rem;
+  background-image: url(../../../assets/images/topup/topup_banner.jpg);
+  background-size: cover;
+  color: #000;
+
+  div:nth-child(1){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 830px) {
+  .cash_collection h2 {
+    padding: 2em 10rem;
+  }
+  video {
+    height: 70vh;
+  }
+  .text-animate {
+    font-size: 2.3rem !important;
+  }
+
+  .core_service--section {
+    display: flex;
+    .core_service--cards {
+      padding-left: 1.25rem;
+    }
+  }
+
+  .serivce {
+    display: flex;
+    align-items: center;
+  }
+
+  .banner-image {
+    width: 32rem;
+  }
+
+  .benefits{
+    div:nth-child(1){
+      flex-direction: row;
+    }
+  }
+}
+
+.text-animate {
+  position: absolute;
+  top: 10rem;
+  color: #000;
+  font-size: 2rem;
+  width: 75%;
+  text-align: center;
+}
+
+
+.aboutUs{
+  background-blend-mode: multiply;
+  padding: 2rem;
+  span:nth-child(1){
+   padding-bottom: 1.25rem;
+  }
+}
+
+.benefits__flex{
+  display: flex;
+  img{
+    height: 7em;
+  }
+}
+
+P{
+  margin-bottom: 1.25rem;
+}
